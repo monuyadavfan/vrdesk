@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ### 4️⃣ Run VrDesk
 
 ```bash
-python vrdesk_v1.2.py
+python vrdesk.py
 ```
 
 ### 5️⃣ Open in browser
