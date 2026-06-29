@@ -62,8 +62,8 @@ cd ~/vrdesk
 ```
 
 Ab **dono files** is folder mein daalo:
-- `vrdesk_v1.4.py`
-- `vrdesk_v1.4.html`
+- `vrdesk.py`
+- `vrdesk.html`
 
 **GitHub se clone karne ka option (agar repo hai):**
 ```bash
@@ -115,7 +115,7 @@ apt install termux-api -y
 
 ```bash
 cd ~/vrdesk
-python vrdesk_v1.4.py
+python vrdesk.py
 ```
 
 Yeh output dikhega:
@@ -151,8 +151,8 @@ http://localhost:8080
 
 ```
 vrdesk/
-├── vrdesk_v1.4.py      ← Backend (Flask server + all APIs)
-├── vrdesk_v1.4.html    ← Frontend (complete UI)
+├── vrdesk.py      ← Backend (Flask server + all APIs)
+├── vrdesk.html    ← Frontend (complete UI)
 ├── requirements.txt    ← Python dependencies
 └── README.md           ← Yeh file
 ```
@@ -284,10 +284,10 @@ Termux band karne par bhi VrDesk chalta rahe:
 
 ```bash
 # nohup se background mein chalao
-nohup python vrdesk_v1.4.py &
+nohup python vrdesk.py &
 
 # Band karna ho to
-pkill -f vrdesk_v1.4.py
+pkill -f vrdesk.py
 ```
 
 ---
@@ -296,13 +296,13 @@ pkill -f vrdesk_v1.4.py
 
 ```bash
 # VrDesk start karo
-cd ~/vrdesk && python vrdesk_v1.4.py
+cd ~/vrdesk && python vrdesk.py
 
 # Background mein start karo
-cd ~/vrdesk && nohup python vrdesk_v1.4.py &
+cd ~/vrdesk && nohup python vrdesk.py &
 
 # Band karo
-pkill -f vrdesk_v1.4.py
+pkill -f vrdesk.py
 
 # Update karo (agar git use kar rahe ho)
 cd ~/vrdesk && git pull
